@@ -18,5 +18,6 @@ public class helloworld {
 		} else {
 			System.out.println("D");
 		}
+	sc.close();
 	}
 }
