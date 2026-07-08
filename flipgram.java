@@ -4,19 +4,12 @@ public class flipgram {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a word: ");
         String input = sc.next().toUpperCase();
-        char flipgram[] = new char[26];
         boolean isFlip = false;
-        for(int i=0; i<input.length(); i++) {
+        for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            for(int j=0; j<flipgram.length; j++) {
-                if(c == flipgram[j]) {
+            if (input.indexOf(c) < i) {
                     isFlip = true;
                     break;
-                    
-                }
-            }
-            if(!isFlip) {
-                flipgram[i] = c;
             }
         }
         if(isFlip==false){
