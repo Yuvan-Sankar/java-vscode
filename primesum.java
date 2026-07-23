@@ -5,9 +5,9 @@ public class primesum {
          Scanner sc=new Scanner(System.in);
         int m;
         int n;
-        int rowsum=0;
+        int rowsum;
         int highrow=0;
-        int columnsum=0;
+        int columnsum;
         int highcolumn=0;
         int rowx=0;
         int columny=0;
@@ -55,7 +55,8 @@ public class primesum {
             }
         }
         System.out.println("the highest sum of the rows and collumns are:\nrow number "+rowx+" with a sum of: "+ highrow+"\ncolumn number "+columny+" at: "+highcolumn);
-        }
+        sc.close();
+    }
     static boolean prime(int n){
         for(int i=2; i<n; i++){
             if(n%i==0){

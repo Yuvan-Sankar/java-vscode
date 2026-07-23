@@ -8,15 +8,13 @@ public class fact {
         System.out.println(mult(n));
         sc.close();
     }
-    static int product=1;
     static int mult(int n){
         if(n==1){
-            return product;
+            return 1;
         }
         else{
-            product=n*product;
-            mult(n-1);
-            return product;
+            return n*mult(n-1);
+            
         }
     }
 }

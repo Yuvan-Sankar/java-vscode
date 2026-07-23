@@ -8,16 +8,13 @@ public class digits {
         System.out.println(digit(n));
         sc.close();
     }
-    static int i=1;
     static int digit(int n){
         if(n<10){
-            return i;
+            return 1;
         }
         else{
             n=n/10;
-            i++;
-            digit(n);
-            return i;
+            return 1+digit(n);
         }
     }
 }

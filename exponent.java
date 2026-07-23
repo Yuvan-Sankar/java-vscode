@@ -16,15 +16,12 @@ public class exponent {
         }
         return product;
     }*/
-    static int product=1;
     static int power(int x, int y){
         if(y==0){
-            return product;
+            return 1;
         }
         else{
-            product=product*x;
-            power(x, y-1);
-            return product;
+            return x*power(x, y-1);
         }
    }
 }

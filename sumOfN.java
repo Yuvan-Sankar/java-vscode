@@ -14,15 +14,17 @@ public class sumOfN {
         }
         return sum;
     }*/
-    static int sum=0;
+    
     static int add(int n){
+        boolean first=true;
+        int sum=0;
         if(n==0){
             return sum;
         }
         else{
-            sum+=n;
-            add(n-1);
+            sum=n+add(n-1);
             return sum;
         }
+
     }
 }
