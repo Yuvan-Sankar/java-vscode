@@ -1,0 +1,6 @@
+Amit,A,92
+Riya,B,78
+John,A,88
+Sara,C,65
+David,B,81
+Priya,A,95
